@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="appendList()">
+    <div class="container">
+        <main>
+            <div class="header">
+                <h1>PHP Test</h1>
+                <h4>Here is a JSON car sytem</h4>
+            </div>
+            <div class="page_body">
+                <div class="body_header">
+                    <h3>List of cars</h3>
+                    <select id="sort_options" onchange="sortCars()">
+                        <option value="0">No sorting option...</option>
+                        <option value="1">Sort by colors</option>
+                        <option value="2">Sort by prices</option>
+                    </select>
+                </div>
+                <div class="body_content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Car name</th>
+                                <th>Price</th>
+                                <th>Discount</th>
+                                <th>Hand</th>
+                                <th>Availability</th>
+                                <th>Color</th>
+                            </tr>
+                        </thead>
+                        <tbody class="carsList">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
